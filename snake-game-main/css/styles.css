@@ -1,0 +1,97 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: white;
+    background-color: #1a252f;
+    /* background-color: #02203c; */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.hrefWithoutDecoration {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+    #content-desktop {
+        display: none !important;
+    }
+    #content-tablet {
+        display: none !important;
+    }
+    #content-mobile {
+        display: block !important;
+    }
+}
+@media (min-width:769px) and (max-width:1024px){
+    #content-desktop {
+        display: block !important;
+    }
+    #content-tablet {
+        display: block !important;
+    }
+    #content-mobile {
+        display: none !important;
+    }
+}
+#content-desktop {display: block;}
+#content-tablet {display: none;}
+#content-mobile {display: none;}
+
+
+.onhoverdark:hover{
+    background: #d7d9dd !important;
+    outline: none;
+}
+
+input[type="text"] {
+    cursor: pointer;
+    outline: none;
+}
+
+/*ul,li {
+    list-style-position:inside;
+    margin:0;
+    padding-left:0;
+    padding-right:10;
+    padding-top: 10;
+    padding-bottom: 10;
+}*/
+
+#boardid {
+    background-image: url("../images/board.jpg");
+    border: 20px solid #2c3e50;
+    border-right: 10px  solid #2c3e50;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.instruction {
+    width: 120px;
+    height: 120px;
+    background-image: url(//www.google.com/logos/fnbx/snake_arcade/keys.svg);
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    margin-left: 25px;
+    margin-top: 15px;
+    /*margin: auto;*/
+    /*position: relative;
+    top: 33%;
+    transform: translateY(-50%);
+    display: block;*/
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunZone - Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎮 FunZone</h1>
+            <p>Choose Your Game & Start Playing</p>
+        </header>
+
+        <div class="games-grid">
+            <!-- Card Flip Game -->
+            <div class="game-card" onclick="redirectToGame('CardFlip_Game-main/index.html')">
+                <div class="card-content">
+                    <div class="game-icon">🎴</div>
+                    <h2>Card Flip</h2>
+                    <p>Test your memory with this classic card matching game!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+
+            <!-- Ludo Game -->
+            <div class="game-card" onclick="redirectToGame('ludo-game-master/index.html')">
+                <div class="card-content">
+                    <div class="game-icon">🎲</div>
+                    <h2>Ludo</h2>
+                    <p>Roll the dice and race to the finish in this classic board game!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+
+            <!-- Quiz Game -->
+            <div class="game-card" onclick="redirectToGame('QUIZ-GAME-WEB-APPLICATION-TASK-3-main/index.html')">
+                <div class="card-content">
+                    <div class="game-icon">❓</div>
+                    <h2>Quiz Master</h2>
+                    <p>Challenge your knowledge and test your brain with fun quizzes!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+
+            <!-- Snake Game -->
+            <div class="game-card" onclick="redirectToGame('snake-game-main/index.html')">
+                <div class="card-content">
+                    <div class="game-icon">🐍</div>
+                    <h2>Snake Game</h2>
+                    <p>Guide the snake and eat food to grow longer without hitting walls!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+
+            <!-- Tic Tac Toe Game -->
+            <div class="game-card" onclick="redirectToGame('TIC-TAE-TOE-main/index.html')">
+                <div class="card-content">
+                    <div class="game-icon">⭕</div>
+                    <h2>Tic Tac Toe</h2>
+                    <p>Battle against the AI or a friend in this timeless strategic game!</p>
+                    <button class="play-btn">Play Now</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 FunZone - Your Gaming Destination</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your knowledge with this interactive general knowledge quiz.">
+    <title>General Knowledge Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-back-btn {
+            position: fixed;
+            top: 18px;
+            left: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 14px;
+            z-index: 999;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(102,102,241,0.18);
+        }
+        .top-back-btn:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <button id="top-back-btn" class="top-back-btn" aria-label="Back to Home">← Home</button>
+    <div class="quiz-container" id="quiz-container">
+        <div class="quiz-header">
+            <h1>General Knowledge Quiz</h1>
+            <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <div id="difficulty-screen" class="active">
+            <h2>Challenge Your Mind!</h2>
+            <p>Please select a difficulty level to begin.</p>
+            <div class="difficulty-buttons">
+                <button id="easy-btn" class="btn">Easy Mode</button>
+                <button id="hard-btn" class="btn">Hard Mode</button>
+            </div>
+        </div>
+
+        <div id="quiz-content" class="hidden">
+            <div id="timer-display" class="hidden">Time Left: <span id="time">15</span>s</div>
+            <div id="question-area">
+                </div>
+            <div id="validation-error" class="error-message hidden"></div>
+            <div class="quiz-navigation">
+                <button id="prev-btn" class="btn secondary-btn hidden">Previous</button>
+                <button id="next-btn" class="btn">Next</button>
+            </div>
+        </div>
+        
+        <div id="results-screen" class="hidden">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is: <span id="score-text">0 / 0</span></p>
+            <p id="score-message"></p>
+            <div class="results-buttons">
+                <button id="restart-btn" class="btn">Try Again</button>
+                <button id="home-btn" class="btn secondary-btn">Back to Home</button>
+            </div>
+            <div class="results-buttons">
+                 <button id="show-answers-btn" class="btn">Show Answers</button>
+            </div>
+
+            <div id="answer-summary-container" class="hidden">
+                <h3>Review Your Answers</h3>
+                <div id="answer-summary">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
